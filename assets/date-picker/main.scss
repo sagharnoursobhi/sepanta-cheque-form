@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Vazir';
+    src: url(./assets/fonts/Vazir.ttf);
+}
+
+body{
+    direction : rtl;
+    font-family: 'Vazir';    
+}
+
+.container {
+    .email {
+        position: relative;
+    }
+}
+
+.date-picker-container {
+    &#divBody1 {
+        display: none;
+        position: fixed;
+        z-index: 10;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+    
+        .date-picker {
+            margin: 10% auto;
+            box-shadow: 3px 3px 6px #888;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+   /*          position: absolute;
+            bottom: 64px;
+            right: 109px; */
+
+            .year {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 0;
+                text-align:center;
+                font-family:'Vazir'
+            }
+
+            .date {
+                //padding: 20px;
+            }
+        }
+    }
+}
+
+/*# sourceMappingURL=date-picker.css.map */
