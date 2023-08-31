@@ -1,3 +1,4 @@
+'use strict';
 /**
  * 
  * persian-datepicker-next-version
@@ -9,7 +10,6 @@
  */
 
 this.persianDatepicker = (function () {
-    'use strict';
 
     function noop() { }
     const identity = x => x;
@@ -7277,7 +7277,7 @@ this.persianDatepicker = (function () {
          * Merges the function metadata of `source` into `data`.
          *
          * Merging metadata reduces the number of wrappers used to invoke a function.
-         * This is possible because methods like `_.bind`, `_.curry`, and `_.partial`
+         * This is  ble because methods like `_.bind`, `_.curry`, and `_.partial`
          * may be applied regardless of execution order. Methods like `_.ary` and
          * `_.rearg` modify function arguments, making the order in which they are
          * executed important, preventing the merging of metadata. However, we make
