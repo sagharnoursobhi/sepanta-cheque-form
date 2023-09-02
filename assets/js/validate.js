@@ -5,7 +5,7 @@ const end = document.getElementById("end");
 const bank = document.getElementById("bank");
 const bail = document.getElementById("bail");
 const cheque = document.getElementById("cheque");
-const date = document.getElementById("date");
+const date = document.getElementById("return-date");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
