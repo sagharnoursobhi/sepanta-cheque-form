@@ -37,9 +37,12 @@ body{
 }
 
 .bg-form{
-    background-color: rgba(5, 94, 247, 0.26);
+   border: 1px solid #A3E1FB;
     z-index: 1;
-    border: 2px solid rgba(65, 172, 225, 0.442);
+}
+
+.blue-border-bottom {
+    border-bottom: 1px solid #A3E1FB;
 }
 
 .btn-submit{
