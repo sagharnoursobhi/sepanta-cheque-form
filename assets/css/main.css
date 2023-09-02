@@ -1,14 +1,128 @@
 @font-face {
     font-family: 'Vazir';
-    src: url(./assets/fonts/Vazir.ttf);
+    src: url("./../fonts/Vazir.ttf") format('truetype');
 }
 
 body{
     direction : rtl;
-    font-family: 'Vazir';    
+    font-family: 'Vazir';  
+    background-color: #c0eafc2c;  
 }
 
 
 .asterisk-icon {
     font-size: 12px;
+}
+
+
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    opacity: .5;
+    background-repeat: no-repeat;
+}
+
+.overlay img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+    
+}
+
+.bg-form{
+    background-color: rgba(5, 94, 247, 0.26);
+    z-index: 1;
+    border: 2px solid rgba(65, 172, 225, 0.442);
+}
+
+.btn-submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    background-color: #167dad;
+    color: white;
+    border-radius: 8px;
+    gap: 12px;
+}
+.form-control-custom,select{
+    background-color: transparent;
+    width: 100%;
+    border: none !important;
+    outline: none !important;
+    height: 45px !important;
+ }
+.form-control-custom{
+   height: 100%;
+   margin-bottom: 0 !important;
+   margin-top: 0 !important;
+   text-indent: 8px;
+   z-index: 5;
+   color: #2e93c2;
+   padding-top: 5px;
+   display: block;
+   font-size: 15px;
+}
+.form-input {
+    border: 1px solid #2e93c2 !important;
+    border-radius: 12px !important;
+    height: 45px !important;
+    direction: rtl !important;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding:0 8px;
+}
+.form-input i{
+    color: #2e93c2;
+}
+.form-input.error{
+    border: 2px solid crimson !important;
+}
+.form-input.success{
+    border: 2px solid #03b070 !important;
+}
+.form-control-custom:focus,input:focus,.form-control-custom:active{
+    outline: 0 !important;
+    border: 0 !important;
+}
+
+.form-control-custom::placeholder{
+    font-size: 14px;
+
+}
+
+label{
+    display: block;
+    margin-bottom: 2px;
+}
+
+.box-label{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+.box-label i{
+    font-size: 14px !important;
+}
+
+.form-group{
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.invalid{
+    color: crimson;
+    font-size: 13px;
+    margin: 4px 8px;
 }
